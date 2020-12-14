@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster|Noto+Sans+KR:400,500,700&display=swap");
+
+body {
+  font-family: "Noto Sans KR";
+  color: #eeefef;
+  background-color: #2f3437;
+}
+
+.weather {
+  text-align: right;
+  margin-right: 2%;
+  margin-top: 2%;
+}
+
+.clock {
+  position: relative;
+  margin-top: 10%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.clock .title {
+  font-size: 80px;
+  text-align: center;
+}
+
+.clock input {
+  padding: 5px 10px;
+  border: 1px solid dimgray;
+  background-color: transparent;
+  /* opacity: 0.5; */
+  color: dimgray;
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.clock input:hover {
+  background-color: dimgray;
+  color: black;
+}
+
+.hidden {
+  display: none;
+}
+
+.showing {
+  display: inline-block;
+}
+
+.js-formGreeting {
+  position: relative;
+  margin-top: 2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hello_container {
+  position: relative;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+#sayHello {
+  display: block;
+  font-size: 40px;
+  text-align: center;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  -webkit-animation: scale-up-center 0.7s;
+  animation: scale-up-center 0.7s;
+}
+
+.js-formToDo {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  list-style: none;
+}
+
+ul li {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+ul button {
+  border: none;
+  background-color: transparent;
+  font-size: 17px;
+  color: green;
+}
