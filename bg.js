@@ -5,7 +5,7 @@ const IMG_NUM = 3;
 function showBg(imgNumber) {
     let img = document.createElement('img');
     body.appendChild(img);
-    img.src = `MMMJ17 / momentum-clone.github.io / images / ${imgNumber+1}.jpg`
+    img.src = `images / ${imgNumber+1}.jpg`
 }
 
 function getRandom() {
